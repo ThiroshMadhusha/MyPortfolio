@@ -357,7 +357,7 @@ h3.my-profession {
   max-width: 100%;
 }
 .about .about-content .skills .skill-item h5{
-  line-height: 40px;
+  line-height: 20px;
   font-weight: 600;
   font-size: 16px;
   color: var(--text-black-900);
