@@ -35,11 +35,15 @@ ul {
   padding: 0 30px;
   opacity: 1;
 }
+
 .hidden {
   display: none !important;
 }
 .main-content {
   padding-left: 270px;
+
+.main-content{
+    padding-left: 270px;
 }
 .padd-15 {
   padding-left: 15px;
@@ -50,6 +54,7 @@ ul {
   width: 100%;
   margin: auto;
 }
+
 .section .container {
   padding-top: 60px;
   padding-bottom: 70px;
@@ -85,6 +90,7 @@ ul {
   left: 0;
   margin-top: 8px;
 }
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -107,7 +113,9 @@ ul {
 .btn:hover {
   transform: scale(1.05);
 }
+
 /* Side Bar */
+
 .aside {
   width: 270px;
   background: var(--bg-black-100);
@@ -213,6 +221,8 @@ ul {
 .aside .nav li a {
   font-size: 16px;
   font-weight: 700;
+
+  font-weight: 500;
   display: block;
   border-bottom: 1px solid var(--bg-black-50);
   color: var(--text-black-900);
@@ -344,4 +354,19 @@ h3.my-profession {
 .about .about-content .personal-info .buttons .btn {
   margin-right: 15px;
   margin-top: 10px;
+}
+.home-img::before{
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-top: 10px solid var(--skin-color);
+    border-left: 10px solid var(--skin-color);
+    left: 20px;
+    top: -40px;
+}
+.home .home-img img {
+    margin: auto;
+    border-radius: 5px;
+  height: 400px;
 }
