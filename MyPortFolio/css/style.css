@@ -35,11 +35,16 @@ ul {
   padding: 0 30px;
   opacity: 1;
 }
+
 .hidden {
   display: none !important;
 }
 .main-content {
   padding-left: 270px;
+
+
+.main-content{
+    padding-left: 270px;
 }
 .padd-15 {
   padding-left: 15px;
@@ -50,6 +55,7 @@ ul {
   width: 100%;
   margin: auto;
 }
+
 .section .container {
   padding-top: 60px;
   padding-bottom: 70px;
@@ -85,6 +91,7 @@ ul {
   left: 0;
   margin-top: 8px;
 }
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -108,6 +115,10 @@ ul {
   transform: scale(1.05);
 }
 /* Side Bar */
+
+
+/* Side Bar */
+
 .aside {
   width: 270px;
   background: var(--bg-black-100);
@@ -213,6 +224,9 @@ ul {
 .aside .nav li a {
   font-size: 16px;
   font-weight: 700;
+
+
+  font-weight: 500;
   display: block;
   border-bottom: 1px solid var(--bg-black-50);
   color: var(--text-black-900);
@@ -283,6 +297,78 @@ h3.my-profession {
   border-left: 10px solid var(--skin-color);
   left: 20px;
   top: -40px;
+
+}
+.home .home-img img {
+  margin: auto;
+  border-radius: 5px;
+  height: 400px;
+}
+
+/* About */
+
+.about .about-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.about .about-content .about-text {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.about .about-content .about-text h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: var(--text-black-900);
+}
+.about .about-content .about-text span {
+  color: var(--skin-color);
+}
+
+.about .about-content .about-text p {
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--text-black-700);
+}
+
+.about .about-content .personal-info {
+  flex: 0 0 90%;
+  max-width: 90%;
+  margin-top: 40px;
+}
+.about .about-content .personal-info .info-item {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.about .about-content .personal-info .info-item p {
+  font-weight: 600;
+  padding: 10px 0;
+  font-size: 16px;
+  color: var(--text-black-900);
+  border-bottom: 1px solid var(--bg-black-50);
+}
+.about .about-content .personal-info .info-item p span {
+  font-weight: 400;
+  color: var(--text-black-700);
+  margin-left: 4px;
+  display: inline-block;
+}
+.about .about-content .personal-info .buttons {
+  margin-top: 25px;
+}
+.about .about-content .personal-info .buttons .btn {
+  margin-right: 15px;
+  margin-top: 10px;
+}
+.home-img::before{
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-top: 10px solid var(--skin-color);
+    border-left: 10px solid var(--skin-color);
+    left: 20px;
+    top: -40px;
 }
 .home .home-img img {
   margin: auto;
