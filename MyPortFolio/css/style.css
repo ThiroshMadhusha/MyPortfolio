@@ -118,7 +118,7 @@ ul {
 
 
 /* Side Bar */
-.aside {
+.side {
   width: 270px;
   background: var(--bg-black-100);
   position: fixed;
@@ -307,7 +307,7 @@ h3.my-profession {
 
 /* About */
 
-.about .about-content {
+.abouts .about-content {
   flex: 0 0 100%;
   max-width: 100%;
 }
@@ -362,7 +362,7 @@ h3.my-profession {
 }
 
 /* Skills */
-.about .about-content .skills {
+.about .about-content .skill {
   flex: 0 0 50%;
   max-width: 50%;
   margin-top: 40px;
@@ -407,8 +407,8 @@ h3.my-profession {
 
 /* Education & Experience */
 
-.about .about-content .education,
-.about .about-content .experience {
+.about .about-content .educations,
+.about .about-content .experiences {
   flex: 0 0 50%;
   max-width: 50%;
   margin-top: 30px;
@@ -424,7 +424,7 @@ h3.my-profession {
   max-width: 100%;
 }
 
-.about .about-content .timeline {
+.abouts .about-content .timeline {
   background-color: var(--bg-black-100);
   padding: 30px 15px;
   border: 1px solid var(--bg-black-50);
@@ -484,10 +484,10 @@ h3.my-profession {
 }
 
 /* Service */
-.service .container {
+.services .container {
   padding-bottom: 40px;
 }
-.service .service-item {
+.services .service-item {
   margin-bottom: 30px;
   flex: 0 0 50%;
   max-width: 50%;
@@ -658,7 +658,7 @@ h3.my-profession {
   color: var(--text-black-900);
   font-weight: 500;
 }
-.portfolio .portfolio-item {
+.portfolios .portfolio-item {
   flex: 0 0 33%;
   max-width: 33%;
   margin-top: 10px;
@@ -689,7 +689,7 @@ h3.my-profession {
   font-size: 15px;
   margin-bottom: 60px;
 }
-.contact .contact-info-item {
+.contacts .contact-info-item {
   flex: 0 0 25%;
   max-width: 25%;
   text-align: center;
@@ -716,7 +716,7 @@ h3.my-profession {
   font-weight: 500;
 }
 
-.contact .contact-form {
+.contacts .contact-form {
   flex: 0 0 100%;
   max-width: 100%;
 }
@@ -754,3 +754,46 @@ h3.my-profession {
   padding: 0 50px;
 }
 
+@media (max-width: 1199px) {
+  .side {
+    left: -270px;
+  }
+  .main-content {
+    padding-left: 0;
+  }
+  .about .about-content .personal-info .info-item {
+    display: block;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .contact .contact-info-item,
+  .portfolio .portfolio-item,
+  .service .service-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .home .home-info {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .home .home-img {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact .contact-form,
+  .contact .contact-info-item,
+  .portfolio .portfolio-item,
+  .service .service-item,
+  .about .about-content .experience,
+  .about .about-content .education,
+  .about .about-content .skills,
+  .about .about-content .personal-info {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
