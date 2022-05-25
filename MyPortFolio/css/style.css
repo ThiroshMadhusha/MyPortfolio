@@ -112,7 +112,7 @@ ul {
 }
 
 /* Side Bar */
-.aside {
+.side {
   width: 270px;
   background: var(--bg-black-100);
   position: fixed;
@@ -244,7 +244,7 @@ h3.hello {
   margin: 15px;
 }
 
-h3.hello span {
+h3.helo span {
   font-family: "Clicker Script", cursive;
   font-size: 30px;
   font-weight: 700;
@@ -262,7 +262,7 @@ h3.my-profession {
   font-size: 20px;
   color: var(--text-black-700);
 }
-.home .home-img {
+.home .home-imgs {
   flex: 0 0 40%;
   max-width: 40%;
   text-align: center;
@@ -288,7 +288,7 @@ h3.my-profession {
   left: 20px;
   top: -40px;
 }
-.home .home-img img {
+.home .home-imgs img {
   margin: auto;
   border-radius: 5px;
   height: 400px;
@@ -296,7 +296,7 @@ h3.my-profession {
 
 /* About */
 
-.about .about-content {
+.about .about-contents {
   flex: 0 0 100%;
   max-width: 100%;
 }
@@ -320,7 +320,7 @@ h3.my-profession {
   color: var(--text-black-700);
 }
 
-.about .about-content .personal-info {
+.abouts .about-content .personal-info {
   flex: 0 0 90%;
   max-width: 90%;
   margin-top: 40px;
@@ -329,7 +329,7 @@ h3.my-profession {
   flex: 0 0 50%;
   max-width: 50%;
 }
-.about .about-content .personal-info .info-item p {
+.abouts .about-content .personal-info .info-item p {
   font-weight: 600;
   padding: 10px 0;
   font-size: 16px;
@@ -342,7 +342,7 @@ h3.my-profession {
   margin-left: 4px;
   display: inline-block;
 }
-.about .about-content .personal-info .buttons {
+.about .about-content .personal-info .button {
   margin-top: 25px;
 }
 .about .about-content .personal-info .buttons .btn {
@@ -351,12 +351,12 @@ h3.my-profession {
 }
 
 /* Skills */
-.about .about-content .skills {
+.abouts .about-content .skills {
   flex: 0 0 50%;
   max-width: 50%;
   margin-top: 40px;
 }
-.about .about-content .skills .skill-item {
+.abouts .about-content .skills .skill-item {
   flex: 0 0 100%;
   max-width: 100%;
 }
@@ -396,8 +396,8 @@ h3.my-profession {
 
 /* Education & Experience */
 
-.about .about-content .education,
-.about .about-content .experience {
+.abouts .about-content .education,
+.abouts .about-content .experience {
   flex: 0 0 50%;
   max-width: 50%;
   margin-top: 30px;
@@ -413,7 +413,7 @@ h3.my-profession {
   max-width: 100%;
 }
 
-.about .about-content .timeline {
+.abouts .about-content .timeline {
   background-color: var(--bg-black-100);
   padding: 30px 15px;
   border: 1px solid var(--bg-black-50);
@@ -481,7 +481,7 @@ h3.my-profession {
   flex: 0 0 50%;
   max-width: 50%;
 }
-.service .service-item .service-item-inner {
+.services .service-item .service-item-inner {
   background-color: var(--bg-black-100);
   border: 1px solid var(--bg-black-50);
   border-radius: 15px;
@@ -542,7 +542,7 @@ h3.my-profession {
   color: var(--text-black-900);
   font-weight: 500;
 }
-.portfolio .portfolio-item {
+.portfolios .portfolio-item {
   flex: 0 0 33%;
   max-width: 33%;
   margin-top: 10px;
@@ -573,7 +573,7 @@ h3.my-profession {
   font-size: 15px;
   margin-bottom: 60px;
 }
-.contact .contact-info-item {
+.contacts .contact-info-item {
   flex: 0 0 25%;
   max-width: 25%;
   text-align: center;
@@ -600,7 +600,7 @@ h3.my-profession {
   font-weight: 500;
 }
 
-.contact .contact-form {
+.contacts .contact-form {
   flex: 0 0 100%;
   max-width: 100%;
 }
@@ -638,3 +638,46 @@ h3.my-profession {
   padding: 0 50px;
 }
 
+@media (max-width: 1199px) {
+  .aside {
+    left: -270px;
+  }
+  .main-content {
+    padding-left: 0;
+  }
+  .about .about-content .personal-info .info-item {
+    display: block;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .contact .contact-info-item,
+  .portfolio .portfolio-item,
+  .service .service-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .home .home-info {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .home .home-img {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact .contact-form,
+  .contact .contact-info-item,
+  .portfolio .portfolio-item,
+  .service .service-item,
+  .about .about-content .experience,
+  .about .about-content .education,
+  .about .about-content .skills,
+  .about .about-content .personal-info {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
