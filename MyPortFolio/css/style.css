@@ -7,7 +7,13 @@
   --text-black-900: #302e4d;
   --text-black-700: #504e70;
 }
-
+body.dark {
+  --bg-black-900: #151515;
+  --bg-black-100: #222222;
+  --bg-black-50: #393939;
+  --text-black-900: #ffffff;
+  --text-black-700: #e9e9e9;
+}
 body {
   line-height: 1.5;
   font-size: 16px;
@@ -118,7 +124,7 @@ ul {
 
 
 /* Side Bar */
-.side {
+.aside {
   width: 270px;
   background: var(--bg-black-100);
   position: fixed;
@@ -307,7 +313,7 @@ h3.my-profession {
 
 /* About */
 
-.abouts .about-content {
+.about .about-content {
   flex: 0 0 100%;
   max-width: 100%;
 }
@@ -362,7 +368,7 @@ h3.my-profession {
 }
 
 /* Skills */
-.about .about-content .skill {
+.about .about-content .skills {
   flex: 0 0 50%;
   max-width: 50%;
   margin-top: 40px;
@@ -407,8 +413,8 @@ h3.my-profession {
 
 /* Education & Experience */
 
-.about .about-content .educations,
-.about .about-content .experiences {
+.about .about-content .education,
+.about .about-content .experience {
   flex: 0 0 50%;
   max-width: 50%;
   margin-top: 30px;
@@ -424,7 +430,7 @@ h3.my-profession {
   max-width: 100%;
 }
 
-.abouts .about-content .timeline {
+.about .about-content .timeline {
   background-color: var(--bg-black-100);
   padding: 30px 15px;
   border: 1px solid var(--bg-black-50);
@@ -484,10 +490,10 @@ h3.my-profession {
 }
 
 /* Service */
-.services .container {
+.service .container {
   padding-bottom: 40px;
 }
-.services .service-item {
+.service .service-item {
   margin-bottom: 30px;
   flex: 0 0 50%;
   max-width: 50%;
@@ -658,7 +664,7 @@ h3.my-profession {
   color: var(--text-black-900);
   font-weight: 500;
 }
-.portfolios .portfolio-item {
+.portfolio .portfolio-item {
   flex: 0 0 33%;
   max-width: 33%;
   margin-top: 10px;
@@ -689,7 +695,7 @@ h3.my-profession {
   font-size: 15px;
   margin-bottom: 60px;
 }
-.contacts .contact-info-item {
+.contact .contact-info-item {
   flex: 0 0 25%;
   max-width: 25%;
   text-align: center;
@@ -716,7 +722,7 @@ h3.my-profession {
   font-weight: 500;
 }
 
-.contacts .contact-form {
+.contact .contact-form {
   flex: 0 0 100%;
   max-width: 100%;
 }
@@ -755,7 +761,7 @@ h3.my-profession {
 }
 
 @media (max-width: 1199px) {
-  .side {
+  .aside {
     left: -270px;
   }
   .main-content {
